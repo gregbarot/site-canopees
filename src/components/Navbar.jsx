@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <header className="global-container pb-3 shadow-sm">
       {/* Logo */}
-      <div className="row justify-content-center">
+      
         <div className="d-flex justify-content-center py-5 px-5">
           <Link to="/">
             <img
@@ -17,11 +17,10 @@ export default function Navbar() {
               />
           </Link>
         </div>
-      </div>
 
       {/* Navbar */}
       <nav className="custom-navbar navbar navbar-expand-lg pt-2 pb-2">
-          <div className="container-fluid px-5">
+          <div className="container-fluid justify-content-center px-5">
 
             <ul className="navbar-nav d-flex justify-content-around w-100 px-0 m-0 fs-5">
              
