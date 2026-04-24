@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //import Composants
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Header";
 import Footer from "./components/Footer";
 
 //import Pages
@@ -28,7 +28,7 @@ function App() {
         <Navbar/>
       </header>
 
-      <main>
+      <main className="container">
       {/* Dessous vont s'afficher les pages*/}
 
         <Routes>
