@@ -1,7 +1,14 @@
+/* Reset */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* Variables */
 
 :root {
-
+/* Couleurs */
   --color-blue: #2a4b9b;
   --color-purple: #692b85;
   --color-green: #098136;
@@ -13,16 +20,26 @@
   --color-white: #fefefe;
   --color-text: #323233;
 
+/* Polices */
   --font-title: "DM Serif Display", serif;
   --font-body: "Montserrat", sans-serif;
+
+
+/* Font-size */
+
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-32: 2rem;
+  --fs-38: 2,375rem;
+  --fs-40: 2,5rem;
+  --fs-48: 3rem;
+
+
 }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
 /* Global */
@@ -31,6 +48,17 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-white);
   color: var(--color-text);
+}
+
+.divider {
+  content: "";
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 2px;
+  max-width: 600px;
+  background-color: var(--color-green)
 }
 
 
@@ -51,19 +79,31 @@ header {
 
 .custom-navbar {
   background-color: var(--color-white);
-
-}
-
-.navbar-nav {
   max-width: 1100px;
+  /* margin: 0 auto; */
 }
+
 
 .nav-link {
+  font-size: var(--fs-24);
   font-family: var(--font-body);
   font-weight: 600;
   margin: 0 1rem;
   position: relative;
   color: var(--color-text);
+}
+
+.footer-link {
+    font-size: var(--fs-24);
+    font-family: var(--font-title);
+    font-weight: 400;
+    color: var(--color-purple);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 .nav-link:hover {
@@ -72,7 +112,7 @@ header {
 
 .nav-link::after {
   content: "";
-  display: block;
+  display: flex;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -96,7 +136,17 @@ header {
 }
 
 
-h1 {
+/* Footer */
+
+.footer-title {
+  color: var(--color-purple);
+  font-size: var(--fs-32);
+}
+
+
+
+/* Titres */
+h1, .footer-title {
   font-family: "DM Serif Display", serif;
 }
 

@@ -29,7 +29,7 @@ function App() {
       </header>
 
       <main>
-      <p>Dessous vont s'afficher les pages</p>
+      {/* Dessous vont s'afficher les pages*/}
 
         <Routes>
           <Route path="/" element={<Accueil />} />
