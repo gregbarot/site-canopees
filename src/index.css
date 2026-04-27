@@ -38,6 +38,8 @@
   --fs-48: 3rem;
 
 
+
+
 }
 
 
@@ -75,7 +77,7 @@ header {
 
 .logo {
   max-width: 666px;
-  width: auto;
+  width: 100%;
 
 }
 
@@ -182,6 +184,7 @@ header.scrolled .logo-container{
   .navbar-nav .nav-link {
     font-size: var(--fs-24);
   }
+
 }
 
 .footer-link {

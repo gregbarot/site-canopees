@@ -1,5 +1,8 @@
 //import Outils
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+
+// import React
+import React, { useLayoutEffect } from 'react';
 
 //import Composants
 import Navbar from "./components/Header";
@@ -19,11 +22,24 @@ import CGU from "./pages/CGU";
 import './App.css'
 
 
+//Pour le scroll to top a chaque changement de page.
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    // Scroll en haut au changement de route
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [location.pathname]);
+
+  return children;
+};
+
+
 function App() {
     return (
 <>
     <BrowserRouter>
-
+<Wrapper>
       <header>
         <Navbar/>
       </header>
@@ -47,6 +63,8 @@ function App() {
       <footer>
         <Footer/>
       </footer>
+
+</Wrapper>
     </BrowserRouter>
      
 </>

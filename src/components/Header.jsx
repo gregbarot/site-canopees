@@ -29,7 +29,7 @@ export default function Header() {
 
 
   return (
-    <header className={`${scrolled ? "scrolled" : ""} container pb-3`}>
+    <header className={`${scrolled ? "scrolled" : ""} container pb-3 px-5`}>
      
       {/* Logo */}
       {/* "logo-container d-flex justify-content-center py-5" */}
@@ -46,7 +46,7 @@ export default function Header() {
 
       {/* Navbar */}
       <nav className="custom-navbar navbar navbar-expand-lg pt-2 pb-2">
-          <div className="container-fluid justify-content-center px-5">
+          <div className="container-fluid justify-content-center">
 
 
             {/* BOUTON TOGGLE (mobile) */}
@@ -64,7 +64,7 @@ export default function Header() {
             {/* Menu */}
 
             <div className={`navbar-collapse justify-content-center ${menuOpen ? "open" : ""} d-lg-flex`} id="navbarContent">
-              <ul className="navbar-nav d-flex justify-content-around w-100 px-0 m-0 fs-5">
+              <ul className="navbar-nav d-flex justify-content-around w-100 px-0 m-0">
               
                 <li className="nav-item col-auto">
                   <NavLink
