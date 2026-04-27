@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
-import pinmap from "../assets/icons/pinmap.svg"
-import phone from "../assets/icons/phone.svg"
-import mail from "../assets/icons/mail.svg"
-import logo_facebook from "../assets/icons/logo_facebook.svg"
-import logo_instagram from "../assets/icons/logo_instagram.svg"
-import logo_linkedin from "../assets/icons/logo_linkedin.svg"
+import "./Footer.css";
+import pinmap from "../../assets/icons/pinmap.svg";
+import phone from "../../assets/icons/phone.svg";
+import mail from "../../assets/icons/mail.svg";
+
+
+
+import logo_facebook from "../../assets/icons/logo_facebook.svg";
+import logo_instagram from "../../assets/icons/logo_instagram.svg";
+import logo_linkedin from "../../assets/icons/logo_linkedin.svg";
 
 
 export default function Footer() {
@@ -14,7 +18,7 @@ export default function Footer() {
         <div className="container">
           <div className="">
 
-              <p className="footer-title mb-4 d-flex justify-content-center">Canopées</p>
+              <p className="title mb-4 d-flex justify-content-center">Canopées</p>
 
             {/* Coordonnées */}
               <div className="row justify-content-center gy-4 pb-5">
@@ -38,6 +42,7 @@ export default function Footer() {
                           className="social-icon"
                           src={logo_facebook}
                           alt=""
+                          aria-label="acceder à notre profil Facebook"
                           />
                         </Link>
                       </li>
@@ -47,6 +52,7 @@ export default function Footer() {
                           className="social-icon"
                           src={logo_instagram}
                           alt=""
+                          aria-label="acceder à notre profil Instagram"
                           />                       
                         </Link>
                       </li>
@@ -56,6 +62,7 @@ export default function Footer() {
                           className="social-icon"
                           src={logo_linkedin}
                           alt=""
+                          aria-label="acceder à notre profil Linkedin"
                           />                       
                         </Link>
                       </li>
@@ -68,7 +75,7 @@ export default function Footer() {
               
 
             {/* Mentions Légales */}
-            
+
               <div className="navbar navbar-expand">
                 <div className="container justify-content-center">
                     <ul className="navbar-nav justify-content-center">

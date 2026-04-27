@@ -5,8 +5,8 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import React, { useLayoutEffect } from 'react';
 
 //import Composants
-import Navbar from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
 
 //import Pages
 import Accueil from "./pages/Accueil";
@@ -41,7 +41,7 @@ function App() {
     <BrowserRouter>
 <Wrapper>
       <header>
-        <Navbar/>
+        <Header/>
       </header>
 
       <main className="container">
