@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="container">
           <div className="">
 
-              <p className="title mb-4 d-flex justify-content-center">Canopées</p>
+              <p className="title">Canopées</p>
 
             {/* Coordonnées */}
               <div className="row justify-content-center gy-4 pb-5">

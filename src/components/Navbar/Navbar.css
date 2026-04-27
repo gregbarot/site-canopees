@@ -39,6 +39,7 @@
   top: 10px;
 }
 
+/* Mouvement de la navbar */
 #navbarContent{
   transform: translateY(-20px);
   opacity: 0;
