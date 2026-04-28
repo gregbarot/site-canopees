@@ -1,8 +1,78 @@
+import "../styles/Prestations.css"
+import PrestationCard from "../components/Prestations/PrestationCard"
+
+import prestation1 from "../assets/images/prestations/img_prestation_01.png"
+import prestation2 from "../assets/images/prestations/img_prestation_02.png"
+import prestation3 from "../assets/images/prestations/img_prestation_03.png"
+import prestation4 from "../assets/images/prestations/img_prestation_04.png"
+import prestation5 from "../assets/images/prestations/img_prestation_05.png"
+
 export default function Prestations() {
+  const prestations = [
+    {
+      id: 1,
+      titre: "Conception et réalisation d’espace verts",
+      image: prestation1,
+      texte: [
+        <p key="1">La conception et la réalisation d’espaces verts consistent à imaginer et créer des <strong>aménagements extérieurs harmonieux</strong>, en tenant compte des contraintes du terrain, du climat et des attentes du client. Chaque projet est pensé comme un ensemble cohérent, où végétaux, matériaux et volumes s’équilibrent pour créer un <strong>lieu esthétique, fonctionnel et durable.</strong></p>,
+        <p key="2">De l’étude initiale à la mise en œuvre, chaque étape est réalisée avec soin : choix des plantations, création des massifs, installation des éléments paysagers et structuration des espaces. L’objectif est de concevoir un environnement vivant, agréable à parcourir et évolutif dans le temps, en respectant <strong>les équilibres naturels et la biodiversité</strong>.</p>
+      ],
+      couleur:"vert", 
+    },
+    {
+      id: 2,
+      titre: "Entretien des espaces verts",
+      image: prestation2,
+      texte: [
+        <p key="1">L’entretien des espaces verts permet de préserver la qualité, l’esthétique et la santé des aménagements paysagers au fil des saisons. Il comprend des interventions régulières telles que la tonte, la taille des haies, le désherbage ou encore le soin apporté aux plantations. Chaque action est réalisée en tenant compte des spécificités du lieu et du rythme naturel des végétaux.</p>,
+        <p key="2">Au-delà de l’aspect visuel, un entretien adapté favorise la durabilité des aménagements et le développement d’un environnement équilibré. Grâce à un suivi rigoureux et des techniques respectueuses du vivant, les espaces verts restent harmonieux, fonctionnels et agréables à vivre tout au long de l’année.</p>
+      ],
+      couleur: "rose", 
+    },
+    {
+      id: 3,
+      titre: "Taille des haies",
+      image: prestation3,
+      texte: [
+        <p key="1">La taille des haies est essentielle pour maintenir des espaces extérieurs soignés, structurés et harmonieux. Elle permet de contrôler la croissance des végétaux, de conserver des formes nettes et d’assurer une séparation esthétique entre les différents espaces. Chaque intervention est adaptée aux essences présentes et réalisée au bon moment afin de respecter leur cycle de développement.</p>,
+        <p key="2">Au-delà de l’aspect visuel, une taille régulière favorise la densité et la bonne santé des haies. En supprimant les branches abîmées ou déséquilibrées, elle stimule la repousse et renforce la vitalité des végétaux. Réalisée avec précision, cette prestation garantit des haies durables, équilibrées et parfaitement intégrées à leur environnement.</p>
+      ],
+      couleur: "orange",
+    },
+    {
+      id: 4,
+      titre: "Élagage et abatage d’arbres",
+      image: prestation4,
+      texte: [
+        <p key="1">L’élagage et l’abattage d’arbres sont des interventions techniques visant à assurer la sécurité, la santé et la longévité des végétaux. L’élagage consiste à tailler les branches afin de maîtriser le développement de l’arbre, améliorer sa structure et limiter les risques de chute. Chaque intervention est réalisée avec précision, en respectant les caractéristiques de l’essence et son environnement.</p>,
+        <p key="2">Lorsque l’arbre présente un danger ou ne peut être conservé, l’abattage devient nécessaire. Cette opération délicate est menée dans le respect des normes de sécurité et des contraintes du terrain, notamment en milieu urbain ou difficile d’accès. L’objectif est d’intervenir de manière contrôlée et responsable, tout en préservant au maximum l’équilibre des espaces environnants.</p>
+      ],
+      couleur: "mauve",
+    },
+    {
+      id: 5,
+      titre: "Valorisation des déchets verts",
+      image: prestation5,
+      texte: [
+        <p key="1">La valorisation des déchets verts consiste à transformer les résidus issus de l’entretien des espaces extérieurs en ressources utiles. Branches, feuilles, tontes ou tailles sont récupérées puis traitées afin d’être réutilisées, notamment sous forme de compost ou de paillage. Cette approche permet de limiter les déchets tout en favorisant un cycle naturel et durable.</p>,
+        <p key="2">En réintégrant ces matières organiques dans le sol, la valorisation contribue à enrichir la terre, à préserver l’humidité et à améliorer la qualité des plantations. Elle s’inscrit dans une démarche respectueuse de l’environnement, visant à réduire l’impact des interventions tout en soutenant la biodiversité et la vitalité des espaces verts.</p>
+      ],
+      couleur: "vert", 
+    },
+
+
+  ]
+
+
+
   return (
-    <div>
-      <h1>Prestations</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptatum ex adipisci, sapiente ipsum exercitationem modi harum nisi similique, ad dolor! Ad dolores tenetur nihil quas vel voluptas ut fugit. Asperiores impedit beatae soluta optio temporibus aperiam cumque alias ipsum voluptatem expedita id labore deleniti autem totam delectus illo facilis cum nemo, porro ipsa odit? Fugiat, numquam. Fugiat earum quae mollitia est voluptatibus praesentium obcaecati, ipsum nobis enim amet laboriosam alias quisquam corrupti? Soluta error amet fugiat reprehenderit natus dolorum ipsum labore facilis dicta. Itaque, reprehenderit corporis harum velit ipsum alias, labore sed qui, praesentium magnam et adipisci. Sequi, veritatis rerum. Nulla sit molestiae eligendi provident quaerat. Perspiciatis eius delectus ipsum laudantium quia, id reprehenderit tenetur earum beatae doloribus natus reiciendis fuga autem nam, quae cupiditate perferendis ipsam rerum? Consequatur quasi animi odit quibusdam porro quos debitis mollitia doloribus ex voluptatem qui, iusto saepe unde vel sit expedita sequi, veritatis cum tempore? Optio tenetur rem repellat id quaerat amet quis, corrupti, ratione harum molestias assumenda? Ea dolores dolore sequi nisi voluptas pariatur reprehenderit laboriosam consequatur beatae hic eveniet magnam nemo expedita, enim porro modi mollitia vitae, recusandae reiciendis et deleniti praesentium labore veniam. Cupiditate earum corporis id suscipit vero dolor, sapiente maiores rem expedita consequuntur illum delectus eos accusamus nulla sequi esse iusto inventore vel deserunt et similique quia! Maiores quaerat dolorum numquam cumque, rerum cum delectus. Fugiat explicabo quis mollitia minima illo hic qui numquam quisquam est, itaque quibusdam possimus? Temporibus quas dolorum molestiae porro voluptates facere voluptatem neque, illo quo perspiciatis? Quia minima, nostrum nulla voluptas est iste laudantium aliquam ratione ex sapiente? Eveniet quas nisi blanditiis harum tenetur doloribus et accusamus excepturi! Corrupti reiciendis beatae ipsam quasi id iure necessitatibus accusantium possimus odio illo amet libero facere voluptate, maxime consequuntur minus excepturi incidunt laboriosam nemo minima, temporibus, quos repellendus cupiditate? Reiciendis id neque soluta, placeat numquam nostrum veniam architecto suscipit, expedita dolor quam mollitia corporis? Totam molestias temporibus commodi doloremque reiciendis voluptas earum perferendis pariatur mollitia praesentium ducimus non ipsa delectus aliquid inventore explicabo numquam natus, vitae facilis ipsum. Excepturi incidunt nobis fugiat repellat aliquam fugit odit beatae ea harum recusandae tenetur voluptatem quaerat quae error natus, iure nam magnam hic facere accusamus. Soluta ut autem reiciendis nisi doloremque expedita. Expedita beatae ex amet. Asperiores dicta illum quod harum delectus possimus consectetur odio ipsum neque at aut a, consequatur voluptate accusantium dolorem quia esse cupiditate, atque deserunt numquam facere. Quibusdam eveniet nobis in reiciendis soluta, id dicta aspernatur sit error illum. Veniam enim voluptate officiis animi saepe ea officia perspiciatis assumenda, dicta nemo quae asperiores ipsa minima velit possimus, distinctio ipsum? Fugiat delectus nisi inventore exercitationem voluptatem voluptas deleniti cumque expedita eaque beatae veritatis culpa veniam voluptatum odit nobis, repudiandae porro nihil? Magni ipsam laborum similique nisi ducimus repellat quos tempora blanditiis, optio, neque eligendi. Quam accusamus, voluptate beatae quae iusto at ipsum. Cupiditate sit unde nostrum tempora distinctio nulla perferendis quo magni, eius rerum sunt tenetur laboriosam, nesciunt laudantium velit, modi illum voluptates laborum veritatis sapiente totam quae debitis veniam! Incidunt, necessitatibus saepe! Porro laborum enim tenetur voluptatibus, veniam a quas dolorem odit esse iste, dignissimos alias omnis modi labore eius explicabo quibusdam qui, cum quam ipsam sequi reprehenderit quos voluptatem. Illo, quidem consequatur quod voluptatem odit nisi corporis voluptate hic voluptatibus inventore beatae iusto repellendus nesciunt enim magni quia sed distinctio, pariatur ipsa recusandae, nostrum voluptas vel accusamus. Nihil eos debitis veniam maiores vero aperiam natus quo consectetur quas cumque ipsum, tempore, in praesentium voluptatum beatae ab ut nemo ipsa quam nam! Obcaecati optio vitae deleniti, possimus nulla inventore eius in ea! Nobis earum odit libero blanditiis consequuntur sed officia placeat rerum, ipsum distinctio reprehenderit. Voluptatum deserunt earum voluptate doloremque magnam quasi laborum provident odit voluptas iure, sapiente, veniam unde corporis iusto. Possimus, quae nemo in illum reprehenderit eveniet necessitatibus atque ullam, omnis odio itaque labore incidunt suscipit hic ut eius cumque voluptatem placeat aliquid! Temporibus dicta sunt animi rerum. Architecto ipsum odit ex nesciunt ab suscipit illum, illo nemo temporibus repellat veritatis reiciendis amet placeat modi velit totam culpa ullam consectetur adipisci sit inventore? Corporis vel quibusdam est veniam, quasi blanditiis ratione deleniti voluptate nemo eveniet eum id facilis suscipit recusandae itaque tempora enim obcaecati sequi! Illum, sint nemo architecto asperiores dicta nam. Doloribus dolorum tempora nostrum. Similique cum tempora dolore obcaecati aut illo eos tempore! Cumque rerum cupiditate et praesentium nisi amet pariatur vel veniam! Libero quasi voluptatum hic dolore quisquam voluptatem eligendi? Ducimus consequuntur consequatur magni at pariatur, adipisci ex? Quaerat doloremque animi tempora maxime quibusdam minus deleniti molestias optio minima? Error iste eveniet deserunt aut, sit sunt voluptates cupiditate nobis accusamus nulla corporis delectus nisi. Nobis pariatur facilis soluta autem harum laboriosam dignissimos deserunt laborum incidunt? Obcaecati tempora sapiente fugiat vel cumque accusamus unde. Non eum modi odio? Blanditiis rem nemo molestias doloribus cumque ratione reiciendis eos. Iure beatae aut corporis nostrum animi laboriosam, aperiam odit incidunt nesciunt modi quidem dolorem minus nemo! Obcaecati sapiente ullam ipsum quibusdam minus mollitia, reiciendis, vitae exercitationem pariatur nemo iusto dolorem recusandae dolores? Quis dolore error in libero, fugit, iusto culpa accusamus voluptates officiis ipsum praesentium at sint accusantium saepe, quibusdam cupiditate voluptatem. Itaque blanditiis, ducimus explicabo, inventore excepturi commodi veritatis optio laborum veniam unde error distinctio dignissimos eaque? Atque dolor autem enim voluptatem. Architecto porro voluptate officiis tempore commodi, ea impedit quidem voluptatum optio itaque id voluptas ipsa eaque dolores? Quia reprehenderit, eaque inventore mollitia necessitatibus atque quas officia aliquid nobis quasi minus obcaecati, quis tempore cupiditate! Cupiditate, inventore vel beatae dolorem maiores eius temporibus. Sunt perspiciatis commodi quasi reiciendis qui delectus vitae odit mollitia, consequatur tenetur deserunt officiis ipsum alias unde ipsam dolorum, quae labore assumenda officia, dicta quibusdam sit dolores nobis? Autem minus minima atque aperiam explicabo exercitationem perferendis molestiae, consequuntur, nisi ipsam laboriosam suscipit optio libero perspiciatis iste vitae sequi officiis odio voluptas! Eius nulla vel odit facere, distinctio deleniti nostrum debitis eos id architecto officiis cumque doloribus! Dignissimos voluptates earum optio soluta eos cum. Laborum recusandae consectetur in dolorem maiores.</p>
-    </div>
+    <section className="pt-4" id="prestations">
+      <h1>Nos prestations.</h1>
+      <div className="prestation-card-container">
+        {prestations.map((prestation) => (
+        <PrestationCard key={prestation.id} {...prestation} />
+      ))}
+      </div>
+    </section>
   )
 }

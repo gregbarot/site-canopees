@@ -51,6 +51,16 @@ body {
   touch-action: pan-y;
 }
 
+p {
+  font-size: var(--fs-16);
+  line-height: 1.6;
+}
+
+@media (min-width: 992px) {
+   p{
+        font-size: var(--fs-20);
+    }
+}
 
 /* Titres */
 

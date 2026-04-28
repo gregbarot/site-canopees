@@ -74,4 +74,6 @@
 
 .client-card .description {
   font-size: var(--fs-20);
+  font-weight: 500;
 }
+
