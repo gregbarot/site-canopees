@@ -41,6 +41,8 @@ export default function Carousel() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
+// on cree une fonction qui retournera un tableau des 3 images qui seront afficher à partir de notre liste d'images contenu dans realisations
+
     const getVisibleImages = () => {
 
         const previousIndex =
@@ -66,6 +68,20 @@ export default function Carousel() {
     };
 
 
+    // Création des fonctions pour changer d'image en cliquant sur une zone de l'image centrale
+    const previousSlide = () => {
+    setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? realisations.length - 1 : prevIndex - 1
+    );
+    };
+
+    const nextSlide = () => {
+  setCurrentIndex((prevIndex) =>
+    prevIndex === realisations.length - 1 ? 0 : prevIndex + 1
+    );
+    };
+
+
  return (
    
             
@@ -73,14 +89,53 @@ export default function Carousel() {
 
         <div className="realisations-carousel d-flex justify-content-center">
                     <div className="carousel-container d-flex align-items-center justify-content-center gap-1">
-                      
-                        {/* Je cree mon tableau des images à afficher dans l'ordre que je veux */}
+
+                        {/* creation d'une zone de clic sur l'image centrale car j'ai enlever le scroll y */}
+                        {/* <div className="carousel-click-zone carousel-click-left" onClick={previousSlide}></div>
+                        <div className="carousel-click-zone carousel-click-right" onClick={nextSlide}></div> */}
+
+                        {/* Je cree les div qui contiennent les images à afficher dans l'ordre que je veux et je cree une fonction de clic pour l'afficher au centre*/}
                         {getVisibleImages().map((realisation) => (
                         <div
                             className={`carousel-image ${realisation.className}`}
                             key={realisation.id}
                             onClick={() => setCurrentIndex(realisation.index)}>
+
                             <img src={realisation.image} alt={realisation.alt} />
+
+
+                        {realisation.className === "center-image" && (
+                                <>
+                                    <div
+                                    className="carousel-click-zone carousel-click-left"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        setCurrentIndex(
+                                        currentIndex === 0
+                                            ? realisations.length - 1
+                                            : currentIndex - 1
+                                        );
+                                    }}
+                                    />
+
+                                    <div
+                                    className="carousel-click-zone carousel-click-right"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        setCurrentIndex(
+                                        currentIndex === realisations.length - 1
+                                            ? 0
+                                            : currentIndex + 1
+                                        );
+                                    }}
+                                    />
+                                </>
+                                )}
+
+
+
+
+                            
                         </div>
                         ))}
             

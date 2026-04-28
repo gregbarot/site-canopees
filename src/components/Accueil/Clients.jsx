@@ -33,9 +33,9 @@ export default function Clients() {
   return (
     <section className="pt-4 d-flex justify-content-center" id="clients">
 
-        <div className="clients-section-container">
+        <div className="clients-section-container container">
           <h2>A qui s'adresse nos services ?</h2>
-          <div className="card-container row justify-content-center gap-1">
+          <div className="card-container row justify-content-center gap-4">
             {clients.map((client) =>  (
               <ClientCard key={(client.id)} {...client}/>
             ))}

@@ -47,6 +47,8 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-white);
   color: var(--color-text);
+  overflow-x: hidden;
+  touch-action: pan-y;
 }
 
 
@@ -81,10 +83,4 @@ h2 {
 }
 
 
-#clients {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  overflow: hidden;
-}
 

@@ -64,5 +64,12 @@
 /* Clients */
 
 #clients {
-    background-color: var(--color-light-green);
+  background-color: var(--color-light-green);
+  width: 100vw;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
 }
+
+
