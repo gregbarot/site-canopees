@@ -1,4 +1,6 @@
-
+.clients-section-container {
+  width: 100%
+}
 
 /* Carte client */
 
@@ -8,7 +10,7 @@
   transition: transform 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   min-width: 250px;
-  /* max-width: 300px; */
+  /* max-width: 400px; */
 }
 
 .client-card:hover {
@@ -28,6 +30,17 @@
 }
 }
 
+/* barre sous le titre */
+.card-divider {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+/* Couleurs selon carte */
 .client-card.couleurParticuliers .card-title {
   color: var(--color-blue);
 }
@@ -50,20 +63,11 @@
 }
 
 
-/* barre sous le titre */
-.card-divider {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 4px;
-  margin-bottom: 20px;
-  border-radius: 2px;
-}
 
 /* image */
 .client-image img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
   object-fit: cover;
   border-radius: 20px;
 }

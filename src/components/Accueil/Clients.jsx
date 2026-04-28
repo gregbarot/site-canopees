@@ -31,14 +31,15 @@ export default function Clients() {
 
 
   return (
-    <section className="pt-4" id="clients">
+    <section className="pt-4 d-flex justify-content-center" id="clients">
 
-      <h2>A qui s'adresse nos services ?</h2>
-     
-        <div className="card-container row justify-content-center">
-          {clients.map((client) =>  (
-            <ClientCard key={(client.id)} {...client}/>
-          ))}
+        <div className="clients-section-container">
+          <h2>A qui s'adresse nos services ?</h2>
+          <div className="card-container row justify-content-center gap-1">
+            {clients.map((client) =>  (
+              <ClientCard key={(client.id)} {...client}/>
+            ))}
+          </div>
         </div>
       
     </section>
