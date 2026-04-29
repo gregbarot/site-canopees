@@ -3,7 +3,8 @@ import { createPortal } from "react-dom"
 import ModalPrestation from "./ModalPrestation"
 import "./ModalButton.css"
 
-export default function ModalButton() {
+
+export default function ModalButton({ prestation }) {
     const [showModal, setShowModal] = useState(false)
 
 
@@ -12,9 +13,9 @@ export default function ModalButton() {
         <button 
         onClick={() => setShowModal(true)}
         className="prestation-button"
-        >Découvrir en images.
+        >Découvrir la prestation en images.
         </button>
-        {showModal && createPortal(<ModalPrestation closeModal={() => setShowModal(false)}/>, document.body)}
+        {showModal && createPortal(<ModalPrestation closeModal={() => setShowModal(false)} prestation={prestation} />, document.body)}
     </>
   )
 }

@@ -1,8 +1,8 @@
 import "./PrestationCard.css"
 import ModalButton from "./ModalButton";
 
-export default function PrestationCard({id, titre, texte, image, couleur}) {
-    const isOdd = id % 2 !== 0;
+export default function PrestationCard({ prestation }) {
+    const isOdd = prestation.id % 2 !== 0;
  
     return (
 
@@ -15,26 +15,26 @@ export default function PrestationCard({id, titre, texte, image, couleur}) {
                 {/* ma div info */}
                 <div className="prestation-info col-12 col-lg-7 d-flex">
                     <div className="d-flex flex-column justify-content-start">
-                        <h2 className="text-lg-start">{titre}</h2>
+                        <h2 className="text-lg-start">{prestation.titre}</h2>
 
-                        <div className={`prestation-divider divider-${couleur} align-self-center align-self-lg-start`}></div>
+                        <div className={`prestation-divider divider-${prestation.couleur} align-self-center align-self-lg-start`}></div>
 
                   
                         <div className="prestation-description">
-                            {texte}
+                            {prestation.texte}
                         </div>
                         
                         <div className="d-none d-lg-flex mt-auto">
-                            <ModalButton/>
+                            <ModalButton prestation={prestation}/>
                         </div>
                     </div>
                 </div>
                 {/* Ma div image */}
                 <div className="prestation-img col-12 col-lg-5">
-                    <img src={image} alt={titre} className={`img-fluid border-${couleur}`} />
+                    <img src={prestation.image} alt={prestation.titre} className={`img-fluid border-${prestation.couleur}`} />
                 </div>
                 <div className="d-lg-none d-flex justify-content-center my-5">
-                    <ModalButton/>
+                    <ModalButton prestation={prestation}/>
                 </div>
             </div>
         </div>
