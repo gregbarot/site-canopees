@@ -81,6 +81,12 @@ h2 {
   font-size: var(--fs-24);
 }
 
+h3 {
+  font-family: "DM Serif Display", serif;
+  color: var(--color-text);
+  font-size: var(--fs-32);
+
+}
 
 @media (min-width: 768px) {
   h1{

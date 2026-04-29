@@ -123,7 +123,7 @@ Votre message a bien été envoyé.
 
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
+    <form onSubmit={handleSubmit} className="d-flex flex-column">
       <Demande
         inputsStates={inputsStates}
         setInputsStates={setInputsStates}
@@ -162,7 +162,7 @@ Votre message a bien été envoyé.
 
       <p className="required-note">*Ces champs sont obligatoires</p>
 
-      <button type="submit" className="btn-submit">
+      <button type="submit" className="btn-submit align-self-center">
         Envoyer
       </button>
     </form>

@@ -5,25 +5,31 @@ export default function Rgpd({
 }) {
   return (
 <>
-        <input
-        id="rgpd"
-        type="checkbox"
-        name="consentRgpd"
-        checked={inputsStates.rgpd}
-        onChange={e =>
-          setInputsStates({...inputsStates, rgpd: e.target.value})
-        }
-      />
+ <div className="form-group">
+         
+         <div className="checkbox-group d-flex align-items-start">
+    <input
+    id="rgpd"
+    type="checkbox"
+    name="rgpd"
+    checked={inputsStates.rgpd}
+    onChange={e =>
+      setInputsStates({...inputsStates, rgpd: e.target.checked})
+    }
+          />
+   
+    <label htmlFor="rgpd">
+    En soumettant ce formulaire, j’accepte que mes données soient utilisées
+    dans le cadre de ma demande *
+          </label>
+         </div>
+    {showValidation.rgpd && (
+    <p className="error-message">
+      Vous devez accepter cette condition pour envoyer le formulaire.
+    </p>
+    )}
+ </div>
 
-      <label htmlFor="rgpd">
-        En soumettant ce formulaire, j’accepte que mes données soient utilisées
-        dans le cadre de ma demande *
-      </label>
 
-      {showValidation.consentRgpd && (
-        <p className="required">
-          Vous devez accepter cette condition pour envoyer le formulaire.
-        </p>
-      )}
 </>  )
 }

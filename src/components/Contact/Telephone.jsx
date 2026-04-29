@@ -5,27 +5,29 @@ export default function Telephone({
 }) {
   return (
 <>
-
-    <label htmlFor="telephone">
-    Téléphone * <span className="required">Saisissez votre numéro</span>
-    </label>
-
-    <input
-    id="telephone"
-    type="tel"
-    name="telephone"
-    placeholder="06 12 34 56 78"
-    value={inputsStates.telephone}
-    onChange={e =>
-        setInputsStates({...inputsStates, telephone: e.target.value})
-    }
-    />
-
-    {showValidation.telephone && (
-    <p className="error-message">
-        Veuillez saisir un numéro de téléphone valide.
-    </p>
-    )}
+<div className="form-group">
+  
+      <label htmlFor="telephone">
+      Téléphone * <span className="required">Saisissez votre numéro</span>
+      </label>
+  
+      <input
+      id="telephone"
+      type="tel"
+      name="telephone"
+      placeholder="06 12 34 56 78"
+      value={inputsStates.telephone}
+      onChange={e =>
+          setInputsStates({...inputsStates, telephone: e.target.value})
+      }
+      />
+  
+      {showValidation.telephone && (
+      <p className="error-message">
+          Veuillez saisir un numéro de téléphone valide.
+      </p>
+      )}
+</div>
 
 </>
   )
