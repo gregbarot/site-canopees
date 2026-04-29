@@ -1,0 +1,31 @@
+export default function Message({
+  inputsStates,
+  setInputsStates,
+  showValidation,
+}) {
+   return (
+<>
+      <label htmlFor="message">
+        Votre message <span className="required">Précisez votre demande</span>
+      </label>
+
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Bonjour..."
+        rows="10"
+        value={inputsStates.message}
+        onChange={e =>
+            setInputsStates({...inputsStates, message: e.target.value})
+        }
+        />
+
+      {showValidation.message && (
+          <p className="error-message">
+          Votre message doit contenir au moins 10 caractères.
+        </p>
+      )}
+
+</>
+  )
+}

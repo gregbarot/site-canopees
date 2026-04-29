@@ -1,0 +1,4 @@
+.required {
+    font-size: var(--fs-16);
+    color: var(--color-red)
+}
