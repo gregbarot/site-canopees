@@ -38,7 +38,7 @@ export default function Footer() {
             className="list-group list-group-horizontal justify-content-center"
             id="social-footer"
           >
-            <ul className="row justify-content-center gap-5">
+            <ul className="row justify-content-center gap-3">
               <li className="col list-group-item justify-content-center align-self-center border-0">
                 <Link to="https://www.facebook.com">
                   <img

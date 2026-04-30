@@ -17,14 +17,18 @@ footer .title {
 /* Liens du footer */
 
 .footer-link {
-  font-size: var(--fs-24);
+  font-size: var(--fs-18);
   font-family: var(--font-title);
   font-weight: 400;
   color: var(--color-purple);
   text-decoration: none;
   cursor: pointer;
 }
-
 .footer-link:hover {
   text-decoration: underline;
+}
+@media (min-width: 576px) {
+  .footer-link{
+    font-size: var(--fs-24);
+}
 }
