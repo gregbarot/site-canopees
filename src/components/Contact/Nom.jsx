@@ -1,31 +1,27 @@
-export default function Nom({
-  inputsStates,
-  setInputsStates,
-  showValidation,
-}) {
+export default function Nom({ inputsStates, setInputsStates, showValidation }) {
   return (
-<>
-    <div className="form-group">
-      <label htmlFor="nom">
+    <>
+      <div className="form-group">
+        <label htmlFor="nom">
           Nom * <span className="required">Saisissez votre nom complet</span>
-          </label>
-          <input
+        </label>
+        <input
           id="nom"
           type="text"
           name="nom"
           placeholder="Bob et Tom"
           value={inputsStates.nom}
-          onChange={e =>
-              setInputsStates({...inputsStates, nom: e.target.value})
+          onChange={(e) =>
+            setInputsStates({ ...inputsStates, nom: e.target.value })
           }
           className={`form-input ${showValidation.nom ? "input-error" : ""}`}
-          />
-          {showValidation.nom && (
+        />
+        {showValidation.nom && (
           <p className="error-message">
-              Veuillez saisir un nom valide (au moins 2 caractères).
+            Veuillez saisir un nom valide (au moins 2 caractères).
           </p>
-      )}
-    </div>
-</>
-  )
+        )}
+      </div>
+    </>
+  );
 }

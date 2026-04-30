@@ -1,7 +1,8 @@
+/* Slider */
+
 .slider {
   position: relative;
   width: 100%;
-  /* overflow: hidden; */
 }
 
 .slider-img {
@@ -22,16 +23,16 @@
 }
 
 .dot {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-    border-radius: 50%;
-    border: 3px solid var(--color-white);
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .dot.active {
-    opacity: 1;
-    background: var(--color-white);
+  opacity: 1;
+  background: var(--color-white);
 }

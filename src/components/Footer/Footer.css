@@ -6,7 +6,7 @@
   margin-top: 20px;
   height: 2px;
   max-width: 600px;
-  background-color: var(--color-green)
+  background-color: var(--color-green);
 }
 
 footer .title {
@@ -14,16 +14,15 @@ footer .title {
   font-size: var(--fs-32);
 }
 
-
 /* Liens du footer */
 
 .footer-link {
-    font-size: var(--fs-24);
-    font-family: var(--font-title);
-    font-weight: 400;
-    color: var(--color-purple);
-    text-decoration: none;
-    cursor: pointer;
+  font-size: var(--fs-24);
+  font-family: var(--font-title);
+  font-weight: 400;
+  color: var(--color-purple);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer-link:hover {

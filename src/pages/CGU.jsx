@@ -1,4 +1,20 @@
+import { useEffect } from "react";
+
 export default function CGU() {
+  // Titre et Description de ma page.
+  useEffect(() => {
+    document.title =
+      "Canopées | CGU | Création et entretien d’espaces verts à Montauban";
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Canopées conçoit, aménage et entretient vos espaces verts à Montauban. Jardins, élagage, abattage et solutions durables pour particuliers et professionnels.",
+      );
+    }
+  }, []);
+
   return (
     <section className="pt-4">
       <h1>Conditions Générales d’Utilisation</h1>
@@ -33,5 +49,5 @@ export default function CGU() {
       <h2>10. Droit applicable</h2>
       <p>Droit français.</p>
     </section>
-  )
+  );
 }

@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 // import React
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect } from "react";
 
 //import Composants
 import Footer from "./components/Footer/Footer";
@@ -19,57 +19,49 @@ import CGV from "./pages/CGV";
 import CGU from "./pages/CGU";
 
 //import Styles
-import './App.css'
+import "./App.css";
 
-
-//Pour le scroll to top a chaque changement de page.
+//Pour le scroll to top à chaque changement de page.
 const Wrapper = ({ children }) => {
   const location = useLocation();
 
   useLayoutEffect(() => {
     // Scroll en haut au changement de route
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [location.pathname]);
 
   return children;
 };
 
-
 function App() {
-    return (
-<>
-    <BrowserRouter>
-<Wrapper>
-      <header>
-        <Header/>
-      </header>
+  return (
+    <>
+      <BrowserRouter>
+        <Wrapper>
+          <header>
+            <Header />
+          </header>
 
-      <main className="container">
-      {/* Dessous vont s'afficher les pages*/}
+          <main className="container">
+            <Routes>
+              <Route path="/" element={<Accueil />} />
+              <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
+              <Route path="/prestations" element={<Prestations />} />
+              <Route path="/tarifs" element={<Tarifs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/mentions-legales" element={<MentionsLegales />} />
+              <Route path="/cgu" element={<CGU />} />
+              <Route path="/cgv" element={<CGV />} />
+            </Routes>
+          </main>
 
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
-          <Route path="/prestations" element={<Prestations />} />
-          <Route path="/tarifs" element={<Tarifs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/mentions-legales" element={<MentionsLegales />} />
-          <Route path="/cgu" element={<CGU />} />
-          <Route path="/cgv" element={<CGV />} />
-        </Routes>
-
-      </main>
-
-      <footer>
-        <Footer/>
-      </footer>
-
-</Wrapper>
-    </BrowserRouter>
-     
-</>
-   
-  )
+          <footer>
+            <Footer />
+          </footer>
+        </Wrapper>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

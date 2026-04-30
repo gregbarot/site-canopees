@@ -1,5 +1,7 @@
 /* Reset */
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@
 /* Variables */
 
 :root {
-/* Couleurs */
+  /* Couleurs */
   --color-blue: #2a4b9b;
   --color-purple: #692b85;
   --color-green: #098136;
@@ -20,12 +22,11 @@
   --color-white: #fefefe;
   --color-text: #323233;
 
-/* Polices */
+  /* Polices */
   --font-title: "DM Serif Display", serif;
   --font-body: "Montserrat", sans-serif;
 
-
-/* Font-size */
+  /* Font-size */
 
   --fs-14: 0.875rem;
   --fs-16: 1rem;
@@ -37,11 +38,9 @@
   --fs-40: 2.5rem;
   --fs-48: 3rem;
   --fs-64: 4rem;
-
 }
 
 /* Global */
-
 
 body {
   font-family: var(--font-body);
@@ -57,23 +56,29 @@ p {
 }
 
 @media (min-width: 992px) {
-   p{
-        font-size: var(--fs-20);
-    }
+  p {
+    font-size: var(--fs-20);
+  }
 }
 
 /* Titres */
 
-
-h1, h2, .title {
+h1,
+h2,
+h3,
+.title {
   font-family: "DM Serif Display", serif;
+}
+
+h1,
+h2,
+.title {
   color: var(--color-purple);
   text-align: center;
   padding-bottom: 20px;
 }
 
-
-h1{
+h1, h3 {
   font-size: var(--fs-32);
 }
 
@@ -82,21 +87,15 @@ h2 {
 }
 
 h3 {
-  font-family: "DM Serif Display", serif;
   color: var(--color-text);
-  font-size: var(--fs-32);
-
 }
 
 @media (min-width: 768px) {
-  h1{
+  h1 {
     font-size: var(--fs-48);
   }
 
   h2 {
-  font-size: var(--fs-40);
+    font-size: var(--fs-40);
+  }
 }
-}
-
-
-

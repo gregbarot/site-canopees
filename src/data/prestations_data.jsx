@@ -42,7 +42,7 @@ export const prestations = [
     },
     {
       id: 4,
-      titre: "Élagage et abatage d’arbres",
+      titre: "Élagage et abattage d’arbres",
       image: prestation4,
       texte: [
         <p key="1">L’élagage et l’abattage d’arbres sont des interventions techniques visant à assurer la sécurité, la santé et la longévité des végétaux. L’élagage consiste à tailler les branches afin de maîtriser le développement de l’arbre, améliorer sa structure et limiter les risques de chute. Chaque intervention est réalisée avec précision, en respectant les caractéristiques de l’essence et son environnement.</p>,
