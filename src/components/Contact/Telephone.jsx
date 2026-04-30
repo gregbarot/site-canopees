@@ -20,6 +20,7 @@ export default function Telephone({
       onChange={e =>
           setInputsStates({...inputsStates, telephone: e.target.value})
       }
+      className={`form-input ${showValidation.telephone ? "input-error" : ""}`}
       />
   
       {showValidation.telephone && (

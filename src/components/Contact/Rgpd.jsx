@@ -16,6 +16,7 @@ export default function Rgpd({
     onChange={e =>
       setInputsStates({...inputsStates, rgpd: e.target.checked})
     }
+    className={`form-input ${showValidation.rgpd ? "input-error" : ""}`}
           />
    
     <label htmlFor="rgpd">

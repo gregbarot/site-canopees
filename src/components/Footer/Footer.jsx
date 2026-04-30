@@ -29,7 +29,7 @@ export default function Footer() {
                   <img src={phone} alt="" className="px-2"/><span className="footer-text px-2">09.48.56.87.96</span>
                 </div>
                 <div className="col-12 col-lg-auto d-flex justify-content-center align-items-center">
-                  <img src={mail} alt="" className="px-2"/><span className="footer-text ps-2"> contact@canopees.com</span>
+                  <img src={mail} alt="" className="px-2"/><span className="footer-text ps-2"> contact@canopees.fr</span>
                 </div>
               </div>
             

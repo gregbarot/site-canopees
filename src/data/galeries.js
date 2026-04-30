@@ -3,25 +3,25 @@ import conception2 from "../assets/images/prestations/prestation_01/conception2.
 import conception3 from "../assets/images/prestations/prestation_01/conception3.png"
 import conception4 from "../assets/images/prestations/prestation_01/conception4.png"
 
-import entretien1 from "../assets/images/prestations/prestation_01/conception1.png"
-import entretien2 from "../assets/images/prestations/prestation_01/conception2.png"
-import entretien3 from "../assets/images/prestations/prestation_01/conception3.png"
-import entretien4 from "../assets/images/prestations/prestation_01/conception4.png"
+import entretien1 from "../assets/images/prestations/prestation_02/entretien1.png"
+import entretien2 from "../assets/images/prestations/prestation_02/entretien2.png"
+import entretien3 from "../assets/images/prestations/prestation_02/entretien3.png"
+import entretien4 from "../assets/images/prestations/prestation_02/entretien4.png"
 
-import taille1 from "../assets/images/prestations/prestation_01/conception1.png"
-import taille2 from "../assets/images/prestations/prestation_01/conception2.png"
-import taille3 from "../assets/images/prestations/prestation_01/conception3.png"
-import taille4 from "../assets/images/prestations/prestation_01/conception4.png"
+import taille1 from "../assets/images/prestations/prestation_03/taille1.png"
+import taille2 from "../assets/images/prestations/prestation_03/taille2.png"
+import taille3 from "../assets/images/prestations/prestation_03/taille3.png"
+import taille4 from "../assets/images/prestations/prestation_03/taille4.png"
 
-import elagage1 from "../assets/images/prestations/prestation_01/conception1.png"
-import elagage2 from "../assets/images/prestations/prestation_01/conception2.png"
-import elagage3 from "../assets/images/prestations/prestation_01/conception3.png"
-import elagage4 from "../assets/images/prestations/prestation_01/conception4.png"
+import elagage1 from "../assets/images/prestations/prestation_04/elagage1.png"
+import elagage2 from "../assets/images/prestations/prestation_04/elagage2.png"
+import elagage3 from "../assets/images/prestations/prestation_04/elagage3.png"
+import elagage4 from "../assets/images/prestations/prestation_04/elagage4.png"
 
-import dechets1 from "../assets/images/prestations/prestation_01/conception1.png"
-import dechets2 from "../assets/images/prestations/prestation_01/conception2.png"
-import dechets3 from "../assets/images/prestations/prestation_01/conception3.png"
-import dechets4 from "../assets/images/prestations/prestation_01/conception4.png"
+import dechets1 from "../assets/images/prestations/prestation_05/dechets1.png"
+import dechets2 from "../assets/images/prestations/prestation_05/dechets2.png"
+import dechets3 from "../assets/images/prestations/prestation_05/dechets3.png"
+import dechets4 from "../assets/images/prestations/prestation_05/dechets4.png"
 
 
 

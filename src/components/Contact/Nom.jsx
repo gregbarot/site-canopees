@@ -18,6 +18,7 @@ export default function Nom({
           onChange={e =>
               setInputsStates({...inputsStates, nom: e.target.value})
           }
+          className={`form-input ${showValidation.nom ? "input-error" : ""}`}
           />
           {showValidation.nom && (
           <p className="error-message">

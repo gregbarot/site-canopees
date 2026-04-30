@@ -18,6 +18,7 @@ export default function Message({
           onChange={e =>
               setInputsStates({...inputsStates, message: e.target.value})
           }
+          className={`form-input ${showValidation.message ? "input-error" : ""}`}
           />
         {showValidation.message && (
             <p className="error-message">

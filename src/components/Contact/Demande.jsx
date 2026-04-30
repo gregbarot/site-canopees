@@ -15,6 +15,7 @@ export default function Demande({
           onChange={e =>
               setInputsStates({...inputsStates, demande: e.target.value })
           }
+          className={`form-input ${showValidation.demande ? "input-error" : ""}`}
           >
           <option value="" disabled>Sélectionnez votre demande</option>
           <option value="conception-realisation">

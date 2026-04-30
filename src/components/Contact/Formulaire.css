@@ -79,6 +79,18 @@
 }
 
 
+
+/* Erreur input */
+
+.form-group .input-error{
+  border: 2px solid var(--color-red);
+}
+
+.form-group .input-error:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(255, 0, 34, 0.2);
+}
+
 /* bouton */
 
 .btn-submit {

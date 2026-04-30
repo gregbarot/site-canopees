@@ -18,6 +18,7 @@ export default function Email({
           onChange={e =>
               setInputsStates({...inputsStates, email: e.target.value})
           }
+          className={`form-input ${showValidation.email ? "input-error" : ""}`}
           />
           {showValidation.email && (
           <p className="error-message">

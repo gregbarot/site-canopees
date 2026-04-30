@@ -1,5 +1,31 @@
 export default function MentionsLegales() {
   return (
-    <h1>Mentions Legales</h1>
+    <section className="pt-4">
+      <h1>Mentions légales</h1>
+
+      <h2>1. Éditeur du site</h2>
+      <p><strong>Canopées</strong> <br/>
+      Société spécialisée dans la conception et l’entretien d’espaces verts<br/>
+      Adresse : 820 Boulevard des Capucines, 82000 Montauban, France<br/>
+      Email : contact@canopees.com</p>
+
+      <h2>2. Hébergement</h2>
+      <p>IONOS</p>
+
+      <h2>3. Propriété intellectuelle</h2>
+      <p>L’ensemble du contenu du site (textes, images, graphismes, logo, vidéos, icônes, etc.) est la propriété exclusive de Canopées, sauf mention contraire. Toute reproduction, distribution, modification ou utilisation de ces éléments, sans autorisation préalable écrite, est strictement interdite.</p>
+
+      <h2>4. Données personnelles</h2>
+      <p>Conformément au RGPD, vous disposez d’un droit d’accès, modification et suppression.</p>
+
+      <h2>5. Cookies</h2>
+      <p>Le site peut utiliser des cookies pour améliorer l’expérience utilisateur.</p>
+
+      <h2>6. Responsabilité</h2>
+      <p>Les informations sont fournies à titre indicatif.</p>
+
+      <h2>7. Droit applicable</h2>
+      <p>Droit français.</p>
+    </section>
   )
 }
