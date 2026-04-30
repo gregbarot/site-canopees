@@ -76,7 +76,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="realisations-carousel d-flex justify-content-center">
+    <div className="realisations-carousel d-flex justify-content-center gap-1">
       <div className="carousel-container d-flex align-items-center justify-content-center gap-1">
         {/* Je cree les div qui contiennent les images à afficher dans l'ordre que je veux et je cree une fonction de clic pour l'afficher au centre*/}
         {getVisibleImages().map((realisation) => (
