@@ -36,7 +36,7 @@ const Wrapper = ({ children }) => {
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/site-canopees">
         <Wrapper>
           <header>
             <Header />
